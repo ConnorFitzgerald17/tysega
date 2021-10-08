@@ -5,7 +5,7 @@ import logo from '../images/logo.png'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <img src={logo} />
+      <span className="img" style={{ backgroundImage: `url(${logo})` }} />
     </div>
     <div className="content">
       <div className="inner">
