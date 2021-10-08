@@ -66,8 +66,14 @@
     width: 5.5rem;
     height: 5.5rem;
     line-height: 5.5rem;
-    border: solid _size(border-width) _palette(border);
     border-radius: 100%;
+    display: flex;
+
+    img {
+      flex-shrink: 0;
+      min-width: 100%;
+      min-height: 100%
+    }
 
     .icon {
       &:before {
