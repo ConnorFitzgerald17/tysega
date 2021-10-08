@@ -18,6 +18,10 @@
 		z-index: 3;
 		display: none;
 
+		.slick-arrow {
+			box-shadow: none !important;
+		  }
+		  
 		article {
 			@include vendor('transform', 'translateY(0.25rem)');
 			@include vendor('transition', (
