@@ -11,11 +11,10 @@ const Header = props => (
       <div className="inner">
         <h1>TYSEGA Properties</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+          Etiam nec volutpat sem, eget tempor dui. Nunc nulla leo, dapibus vel
+          interdum gravida.
         </p>
       </div>
     </div>
