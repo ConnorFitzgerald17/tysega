@@ -255,38 +255,44 @@ const Main = props => {
         <h2 className="major">Contact</h2>
         <form action="https://formspree.io/f/xdobnjje" method="POST">
           <label>
-            Email:
-            <input type="email" name="_replyto" required />
-          </label>
-          <label>
-            Phone:
+            Email:*
             <input
-              type="tel"
-              name="phone"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              placeholder="123-123-1234"
+              type="email"
+              name="_replyto"
               required
+              placeholder="Your email"
             />
           </label>
           <label>
-            Name:
+            Phone:*
+            <input
+              type="tel"
+              placeholder="Your phone number"
+              id="phone"
+              name="phone"
+            />
+          </label>
+          <label>
+            Name:*
             <input type="text" name="name" placeholder="Your name" required />
           </label>
           <label>
-            Location:
-            <select name="location" id="location">
+            Location:*
+            <select name="location" id="location" required>
+              <option value="">Select a location</option>
               <option value="riga">Riga</option>
               <option value="lats">Lats</option>
               <option value="presland">Presland Road</option>
             </select>
           </label>
           <label>
-            Move in date:
+            Move in date:*
             <input
               type="date"
               id="start"
               name="trip-start"
               min={`${props.currentYear}-${props.currentMonth}-${props.currentDay}`}
+              required
             ></input>
           </label>
           <label>
@@ -295,6 +301,8 @@ const Main = props => {
           </label>
           <button type="submit">Send</button>
         </form>
+        <p>All fields indicated with * are required</p>
+
         {close}
       </article>
     </div>
