@@ -14,6 +14,9 @@ class IndexPage extends React.Component {
       articleTimeout: false,
       article: '',
       loading: 'is-loading',
+      currentYear: '',
+      currentMonth: '',
+      currentDay: '',
     }
     this.handleOpenArticle = this.handleOpenArticle.bind(this)
     this.handleCloseArticle = this.handleCloseArticle.bind(this)
@@ -22,6 +25,16 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount() {
+    var dateObj = new Date()
+    var currentMonth = dateObj.getUTCMonth() + 1 //months from 1-12
+    var currentDay = dateObj.getUTCDate()
+    var currentYear = dateObj.getUTCFullYear()
+    console.log(currentDay)
+
+    currentMonth = ('0' + currentMonth).slice(-2)
+    currentDay = this.getDate(dateObj)
+    this.setState({ currentYear, currentMonth, currentDay })
+
     this.timeoutId = setTimeout(() => {
       this.setState({ loading: '' })
     }, 100)
@@ -37,6 +50,10 @@ class IndexPage extends React.Component {
 
   setWrapperRef(node) {
     this.wrapperRef = node
+  }
+
+  getDate(date) {
+    return (date.getDate() < 10 ? '0' : '') + date.getDate()
   }
 
   handleOpenArticle(article) {
@@ -103,7 +120,11 @@ class IndexPage extends React.Component {
               timeout={this.state.timeout}
               articleTimeout={this.state.articleTimeout}
               article={this.state.article}
+              currentDay={this.state.currentDay}
+              currentMonth={this.state.currentMonth}
+              currentYear={this.state.currentYear}
               onCloseArticle={this.handleCloseArticle}
+              onOpenArticle={this.handleOpenArticle}
               setWrapperRef={this.setWrapperRef}
             />
             <Footer timeout={this.state.timeout} />

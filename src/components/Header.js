@@ -9,13 +9,8 @@ const Header = props => (
     </div>
     <div className="content">
       <div className="inner">
-        <h1>TYSEGA Properties</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          <br />
-          Etiam nec volutpat sem, eget tempor dui. Nunc nulla leo, dapibus vel
-          interdum gravida.
-        </p>
+        <h1>TYSEGA</h1>
+        <p>Reliable, Friendly, Clean and Affordable Living</p>
       </div>
     </div>
     <nav>
@@ -26,7 +21,7 @@ const Header = props => (
               props.onOpenArticle('britannia')
             }}
           >
-            Britannia
+            WEST LOCATION
           </button>
         </li>
         <li>
@@ -35,7 +30,7 @@ const Header = props => (
               props.onOpenArticle('overbrook')
             }}
           >
-            Overbrook
+            EAST LOCATION
           </button>
         </li>
         <li>
