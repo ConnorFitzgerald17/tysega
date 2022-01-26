@@ -70,7 +70,7 @@ const Main = props => {
           <li>2 baths</li>
           <li>Hardwood floors</li>
           <li>Fridge, stove, washer and dryer</li>
-          <li>1Parking space in the Garage</li>
+          <li>Parking space in the garage</li>
         </ul>
         <p>Walking distance to:</p>
         <ul>
@@ -112,7 +112,7 @@ const Main = props => {
           <li>2 baths</li>
           <li>Hardwood floors</li>
           <li>Fridge, stove, washer and dryer</li>
-          <li>1 Parking space in the Garage</li>
+          <li>Parking space in the garage</li>
         </ul>
         <p>Walking distance to:</p>
         <ul>
@@ -189,7 +189,7 @@ const Main = props => {
           <li>1 baths</li>
           <li>Hardwood floors</li>
           <li>Fridge, stove, washer and dryer</li>
-          <li>1 Parking space in the Garage</li>
+          <li>Parking space in the garage</li>
         </ul>
         <p>Walking distance to:</p>
         <ul>
