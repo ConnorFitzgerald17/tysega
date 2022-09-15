@@ -150,9 +150,9 @@ const Main = props => {
       >
         <h2 className="major">EAST LOCATION</h2>
         <h2>Overview</h2>
-        <h3>Presland Manor</h3>
+        <h3>Overbrook Place</h3>
         <p>
-          Our Presland Manor townhouse properties sit on the southern edge of
+          Our Overbrook Place townhouse properties sit on the southern edge of
           Overbrook, minutes east of Ottawa’s downtown core. The 17 townhouses
           offer both 2- and 3-bedroom options, and are located steps to St.
           Laurent Shopping Centre, Starbucks, Canadian Tire, and Trainyards
